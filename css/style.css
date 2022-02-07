@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Poppins:wght@300;400;700&display=swap');
+/* ***************************************** COMMON CODES START HERE ********************************** */
 :root{
     --main-color:#ff3333;
     --white-color:#ffffff;
     --black-color:#000000;
     --sub-background:#ffffcc;
+    --header-font:'Montserrat', sans-serif;
 }
 *{
     box-sizing:border-box;
@@ -11,6 +13,9 @@
     padding:0;
     font-family: 'Poppins', sans-serif;
 }
+/* ***************************************** COMMON CODES END HERE ********************************** */
+
+/* ***************************************** HEADER CODES START HERE ********************************** */
 .header{
     background: url("../images/header-background.png");
     background-position: center;
@@ -41,7 +46,7 @@
     font-size: 30px;
     font-weight: 700;
     color:var(--white-color);
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--header-font);
 }
 .navbar-expand-lg .navbar-collapse {
     display: flex !important;
@@ -63,7 +68,7 @@
 .header-wrap h1{
     color:var(--white-color);
     font-size: 5rem;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--header-font);
     font-weight: 700;
     width:50%;
     margin-bottom: 40px;
@@ -82,8 +87,187 @@
     border-radius: 50px;
     padding:10px 30px;
 }
+/* ***************************************** HEADER CODES END HERE ********************************** */
+
+/* ***************************************** OUR CHEF SECTION START HERE ********************************** */
 #our-chef{
     width:100%;
     height:100vh;
     background-color: var(--sub-background);
+    padding:50px 0;
+    position:relative;
 }
+.chef-shape-div .chef-shape-div-burger{
+    position:absolute;
+    top:8%;
+    right:10%;
+    animation-name: burger;
+    animation-duration:3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+@keyframes burger {
+    0%{
+        top:8%;
+    }
+    50%{
+        top:13%;
+    }
+    100%{
+        top:8%;
+    }
+}
+#our-chef-burger-bg{
+    width:200px;
+    transform:rotate(45deg);
+}
+.chef-shape-div .chef-shape-div-cepci{
+    position:absolute;
+    top:60%;
+    right:5%;
+}
+#our-chef-capci-bg{
+    width:100px;
+    animation-name: capci;
+    animation-duration:2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+@keyframes capci {
+    0%{
+        width:100px;
+    }
+    50%{
+        width:120px;
+    }
+    100%{
+        width:100px;
+    }
+}
+.chef-shape-div .chef-shape-div-mashroom{
+    position: absolute;
+    bottom:7%;
+    right:35%;
+}
+#our-chef-mashroom-bg{
+    width:100px;
+    transform: rotate(90deg);
+    animation-name: mashroom;
+    animation-duration:5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+@keyframes mashroom {
+    0%{
+        transform:rotate(90deg);
+    }
+    50%{
+        transform:rotate(360deg);
+    }
+    100%{
+        transform:rotate(90deg);
+    }
+}
+.chef-shape-div .chef-shape-div-leaf{
+    position:absolute;
+    bottom:12%;
+    left:35%;
+}
+#our-chef-leaf-bg{
+    width:100px;
+    transform:rotate(45deg);
+    animation-name: leaf;
+    animation-duration:2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+@keyframes leaf {
+    0%{
+        width:100px;
+    }
+    50%{
+        width:120px;
+    }
+    100%{
+        width:100px;
+    }
+}
+.chef-shape-div .chef-shape-div-frenchfry{
+    position:absolute;
+    top:40%;
+    left:0;
+    animation-name: frenchfry;
+    animation-duration:3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+@keyframes frenchfry {
+    0%{
+        left:0;
+    }
+    50%{
+        left:5%;
+    }
+    100%{
+        left:0;
+    }
+}
+#our-chef-frenchfry-bg{
+    width:200px;
+}
+.chef-shape-div .chef-shape-div-garlic{
+    position:absolute;
+    left:20%;
+    top:15%;
+}
+#our-chef-garlic-bg{
+    width:100px;
+    animation-name: garlic;
+    animation-duration:2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+@keyframes garlic {
+    0%{
+        width:100px;
+    }
+    50%{
+        width:120px;
+    }
+    100%{
+        width:100px;
+    }
+}
+#our-chef h2{
+    text-align: center;
+    font-size: 4rem;
+    color:var(--main-color);
+    font-weight: 700;
+    font-family: var(--header-font);
+    margin-bottom:20px;
+}
+#our-chef p{
+    width:58%;
+    margin:0 auto;
+    font-size:1.5rem;
+    color:var(--main-color);
+    text-align: center;
+}
+#our-chef .all-chef{
+    padding-top:50px;
+    text-align: center;
+}
+#our-chef .all-chef .single-chef img{
+    width:80%;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+#our-chef .all-chef .single-chef h3{
+    text-transform: uppercase;
+    color:var(--main-color);
+    font-size:2rem;
+    font-weight: 700;
+    margin-bottom:10px;
+    font-family: var(--header-font);
+}
+/* ***************************************** OUR CHEF SECTION END HERE ********************************** */

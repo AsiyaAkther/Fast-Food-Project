@@ -5,11 +5,16 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/animate.css">
         <link rel="stylesheet" href="css/style.css">
         <title>Fast Food</title>
     </head>
     <body>
+        <!-- ----------------------------------------------------------
+        ----------------------- HEADER START -------------------------
+        ------------------------------------------------------------- -->
         <header class="header">
+            <!-- menubar start here -->
             <div class="menu-bar">
                 <div class="container">
                     <nav class="navbar navbar-expand-lg navbar-light">
@@ -44,28 +49,86 @@
                     </nav>
                 </div>
             </div>
+            <!-- menubar end here -->
+
+            <!-- header wrap start here -->
             <div class="header-wrap">
                 <div class="container">
-                    <h1>Get Cashback up to 50%</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consectetur justo eu nunc consequat.</p>
-                    <a href="#" class="btn btn-primary">Order Now</a>
+                    <h1 data-wow-delay="0.5s" class="wow bounceInDown">Get Cashback up to 50%</h1>
+                    <p data-wow-delay="0.5s" class="wow bounceInLeft">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consectetur justo eu nunc consequat.</p>
+                    <a href="#" data-wow-delay="0.5s" class="btn btn-primary wow bounceInUp">Order Now</a>
                 </div>
             </div>
+            <!-- header wrap end here -->
         </header>
+        <!-- ----------------------------------------------------------
+        ----------------------- HEADER END -------------------------
+        ------------------------------------------------------------- -->
+
+        <!-- ----------------------------------------------------------
+        ----------------------- MAIN START -------------------------
+        ------------------------------------------------------------- -->
         <main>
+            <!--    OUR CHEF SECTION START HERE -->
             <section id="our-chef">
-                <h2>OUR CHEF</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. </p>
-                <div class="all-chef">
-                    <div class="single-chef">
-                        <img src="" alt="">
-                        <h3></h3>
-                        <p></p>
+                <div class="container">
+                    <h2>Our Chef</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vi-vamus lacinia odio vitae vestibulum vestibulum. </p>
+                    <div class="all-chef">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="single-chef">
+                                    <img src="images/chef-one.png" alt="">
+                                    <h3>AIDEN HUNTER</h3>
+                                    <p>Founder</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="single-chef">
+                                    <img src="images/chef-two.png" alt="">
+                                    <h3>Ethel Ramsey</h3>
+                                    <p>Co-Founder</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="single-chef">
+                                    <img src="images/chef-three.png" alt="">
+                                    <h3>Fannie Stewart</h3>
+                                    <p>Co-Founder</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="chef-shape-div">
+                    <div class="chef-shape-div-burger">
+                        <img src="images/our-chef-burger-bg.png" alt="" id="our-chef-burger-bg">
+                    </div>
+                    <div data-wow-delay="0.5s" class="chef-shape-div-cepci wow bounceInRight cente ">
+                        <img src="images/our-chef-capci-bg.png" alt="" id="our-chef-capci-bg">
+                    </div>
+                    <div data-wow-delay="0.5s" class="chef-shape-div-mashroom wow bounceInUp center">
+                        <img src="images/our-chef-mashroom-bg.png" alt="" id="our-chef-mashroom-bg">
+                    </div>
+                    <div data-wow-delay="0.5s" class="chef-shape-div-leaf  wow bounceInDown center">
+                        <img src="images/our-chef-leaf-bg.png" alt="" id="our-chef-leaf-bg">
+                    </div>
+                    <div class="chef-shape-div-frenchfry">
+                        <img src="images/our-chef-frenchfry-bg.png" alt="" id="our-chef-frenchfry-bg">
+                    </div>
+                    <div data-wow-delay="0.5s" class="chef-shape-div-garlic wow rollIn">
+                        <img src="images/our-chef-garlic-bg.png" alt="" id="our-chef-garlic-bg">
                     </div>
                 </div>
             </section>
+            <!--    OUR CHEF SECTION END HERE -->
         </main>
+        <!-- ----------------------------------------------------------
+        ----------------------- MAIN END -------------------------
+        ------------------------------------------------------------- -->
         
         <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>
