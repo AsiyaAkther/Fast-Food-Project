@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Poppins:wght@300;400;700&display=swap');
-/* ***************************************** COMMON CODES START HERE ********************************** */
+/* ************************************** COMMON CODES START HERE ******************************** */
 :root{
     --main-color:#ff3333;
     --white-color:#ffffff;
@@ -13,9 +13,103 @@
     padding:0;
     font-family: 'Poppins', sans-serif;
 }
-/* ***************************************** COMMON CODES END HERE ********************************** */
+section h2{
+    font-size: 5rem;
+    font-weight: 700;
+    font-family: var(--header-font);
+    margin-bottom:20px;
+}
+section p{
+    font-size:1.8rem;
+}
+.my-btn{
+    font-size: 2rem;
+    text-transform: uppercase;
+    border-radius: 50px;
+    padding:10px 30px;
+}
+/*********************************  ALL KEYFRAMES START HERE ***************************** */
+@keyframes burger {
+    0%{
+        top:8%;
+    }
+    50%{
+        top:13%;
+    }
+    100%{
+        top:8%;
+    }
+}
+@keyframes capci {
+    0%{
+        width:100px;
+    }
+    50%{
+        width:120px;
+    }
+    100%{
+        width:100px;
+    }
+}
+@keyframes mashroom {
+    0%{
+        transform:rotate(90deg);
+    }
+    50%{
+        transform:rotate(360deg);
+    }
+    100%{
+        transform:rotate(90deg);
+    }
+}
+@keyframes leaf {
+    0%{
+        width:100px;
+    }
+    50%{
+        width:120px;
+    }
+    100%{
+        width:100px;
+    }
+}
+@keyframes frenchfry {
+    0%{
+        left:0;
+    }
+    50%{
+        left:5%;
+    }
+    100%{
+        left:0;
+    }
+}
+@keyframes garlic {
+    0%{
+        width:100px;
+    }
+    50%{
+        width:120px;
+    }
+    100%{
+        width:100px;
+    }
+}
+@keyframes big-frenchfry {
+    0%{
+        right:3%;
+    }
+    50%{
+        right:8%;
+    }
+    100%{
+        right:3%;
+    }
+}
+/*********************************  ALL KEYFRAMES END HERE ***************************** */
+/* ************************************** COMMON CODES END HERE ******************************* */
 
-/* ***************************************** HEADER CODES START HERE ********************************** */
+/* ************************************** HEADER CODES START HERE ******************************** */
 .header{
     background: url("../images/header-background.png");
     background-position: center;
@@ -82,14 +176,10 @@
 .header-wrap a{
     background-color: var(--main-color);
     border: var(--main-color);
-    font-size: 2rem;
-    text-transform: uppercase;
-    border-radius: 50px;
-    padding:10px 30px;
 }
-/* ***************************************** HEADER CODES END HERE ********************************** */
+/* *************************************** HEADER CODES END HERE ******************************** */
 
-/* ***************************************** OUR CHEF SECTION START HERE ********************************** */
+/* ************************************ OUR CHEF SECTION START HERE ******************************** */
 #our-chef{
     width:100%;
     height:100vh;
@@ -105,17 +195,6 @@
     animation-duration:3s;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
-}
-@keyframes burger {
-    0%{
-        top:8%;
-    }
-    50%{
-        top:13%;
-    }
-    100%{
-        top:8%;
-    }
 }
 #our-chef-burger-bg{
     width:200px;
@@ -133,17 +212,6 @@
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
 }
-@keyframes capci {
-    0%{
-        width:100px;
-    }
-    50%{
-        width:120px;
-    }
-    100%{
-        width:100px;
-    }
-}
 .chef-shape-div .chef-shape-div-mashroom{
     position: absolute;
     bottom:7%;
@@ -156,17 +224,6 @@
     animation-duration:5s;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
-}
-@keyframes mashroom {
-    0%{
-        transform:rotate(90deg);
-    }
-    50%{
-        transform:rotate(360deg);
-    }
-    100%{
-        transform:rotate(90deg);
-    }
 }
 .chef-shape-div .chef-shape-div-leaf{
     position:absolute;
@@ -181,17 +238,6 @@
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
 }
-@keyframes leaf {
-    0%{
-        width:100px;
-    }
-    50%{
-        width:120px;
-    }
-    100%{
-        width:100px;
-    }
-}
 .chef-shape-div .chef-shape-div-frenchfry{
     position:absolute;
     top:40%;
@@ -200,17 +246,6 @@
     animation-duration:3s;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
-}
-@keyframes frenchfry {
-    0%{
-        left:0;
-    }
-    50%{
-        left:5%;
-    }
-    100%{
-        left:0;
-    }
 }
 #our-chef-frenchfry-bg{
     width:200px;
@@ -227,29 +262,13 @@
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
 }
-@keyframes garlic {
-    0%{
-        width:100px;
-    }
-    50%{
-        width:120px;
-    }
-    100%{
-        width:100px;
-    }
-}
 #our-chef h2{
     text-align: center;
-    font-size: 4rem;
     color:var(--main-color);
-    font-weight: 700;
-    font-family: var(--header-font);
-    margin-bottom:20px;
 }
 #our-chef p{
-    width:58%;
+    width:67%;
     margin:0 auto;
-    font-size:1.5rem;
     color:var(--main-color);
     text-align: center;
 }
@@ -270,4 +289,161 @@
     margin-bottom:10px;
     font-family: var(--header-font);
 }
-/* ***************************************** OUR CHEF SECTION END HERE ********************************** */
+/* ************************************** OUR CHEF SECTION END HERE ******************************* */
+
+/************************************** BEST BURGER SECTION START HERE ****************************** */
+#best-burger{
+    width:100%;
+    height:100vh;
+    background-color:var(--main-color);
+    padding:9% 0;
+}
+#best-burger .best-burger-img-area img{
+    width:90%;
+    border-radius: 50%;
+}
+#best-burger .best-burger-text-area{
+    height:600px;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#best-burger .best-burger-text-area h2{
+    color:var(--white-color);
+}
+#best-burger .best-burger-text-area p{
+    color:var(--white-color);
+    margin-bottom:40px;
+}
+#best-burger .best-burger-text-area a{
+    width:50%;
+    background-color: var(--white-color);
+    border:var(--white-color);
+    color:var(--main-color);
+}
+/* ************************************** BEST BURGER SECTION END HERE ******************************** */
+
+/* ************************************ BIG BURGER SECTION START HERE ******************************** */
+#big-burger{
+    width:100%;
+    height:100vh;
+    background-color:var(--sub-background);
+    padding:9% 0;
+    position:relative;
+}
+.big-burger-shapes .big-shape-div-burger{
+    position:absolute;
+    top:2%;
+    right:50%;
+    animation-name: burger;
+    animation-duration:3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+.big-burger-shapes .big-shape-div-burger #our-chef-burger-bg{
+    transform:rotate(0deg);
+}
+.big-burger-shapes .big-shape-div-leaf{
+    position:absolute;
+    top:12%;
+    right:10%;
+}
+.big-burger-shapes .big-shape-div-leaf #our-chef-leaf-bg{
+    transform:rotate(20deg);
+}
+.big-burger-shapes .big-shape-div-frenchfry{
+    position:absolute;
+    bottom: 3%;
+    right:3%;
+    animation-name: big-frenchfry;
+    animation-duration:3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+.big-burger-shapes .big-shape-div-frenchfry #our-chef-frenchfry-bg{
+    transform:rotate(-45deg);
+}
+.big-burger-shapes .big-shape-div-mashroom{
+    position:absolute;
+    bottom:7%;
+    left:40%;
+}
+.big-burger-shapes .big-shape-div-garlic{
+    position:absolute;
+    bottom: 3%;
+    left:10%;
+}
+.big-burger-shapes .big-shape-div-cepci{
+    position:absolute;
+    top:20%;
+    left:0;
+}
+.big-burger-shapes .big-shape-div-cepci #our-chef-capci-bg{
+    transform:rotate(70deg);
+}
+#big-burger .big-burger-img-area{
+    padding-left:50px;
+}
+#big-burger .big-burger-img-area img{
+    width:90%;
+    border-radius: 50%;
+}
+#big-burger .big-burger-text-area{
+    height:600px;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#big-burger .big-burger-text-area h2{
+    color:var(--main-color);
+}
+#big-burger .big-burger-text-area p{
+    color:var(--main-color);
+    margin-bottom:40px;
+}
+#big-burger .big-burger-text-area a{
+    background-color: var(--main-color);
+    border:var(--main-color);
+    width:50%;
+}
+/* ************************************** BIG BURGER SECTION END HERE ******************************** */
+
+/* ************************************ STATISTICS SECTION START HERE ******************************* */
+#statistics{
+    width:100%;
+    height:100vh;
+    background-color: var(--main-color);
+    color:var(--white-color);
+    padding:5% 0;
+}
+#statistics h2{
+    text-align:center;
+}
+#statistics p{
+    width:67%;
+    margin:0 auto;
+    text-align: center;
+}
+#statistics .counter-area{
+    padding-top:100px;
+}
+#statistics .counter-area .counter-main{
+    width:90%;
+    border:10px solid var(--white-color);
+    padding:75px 0;
+    border-radius: 50%;
+}
+#statistics .counter-area .counter-main .counter-span{
+    text-align:center;
+}
+#statistics .counter-area .counter-main span{
+    font-size:6rem;
+    font-weight: 700;
+}
+#statistics .counter-area .counter-main p{
+    font-size:2.6rem;
+    text-transform: uppercase;
+}
+/* ************************************ STATISTICS SECTION END HERE ********************************* */
