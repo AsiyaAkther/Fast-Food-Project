@@ -40,6 +40,17 @@ section p{
         top:8%;
     }
 }
+@keyframes package-burger {
+    0%{
+        top:1%;
+    }
+    50%{
+        top:5%;
+    }
+    100%{
+        top:1%;
+    }
+}
 @keyframes capci {
     0%{
         width:100px;
@@ -104,6 +115,17 @@ section p{
     }
     100%{
         right:3%;
+    }
+}
+@keyframes package-frechfry {
+    0%{
+        right:11%;
+    }
+    50%{
+        right:8%;
+    }
+    100%{
+        right:11%;
     }
 }
 /*********************************  ALL KEYFRAMES END HERE ***************************** */
@@ -447,3 +469,188 @@ section p{
     text-transform: uppercase;
 }
 /* ************************************ STATISTICS SECTION END HERE ********************************* */
+
+/* ************************************ PACKAGE SECTION START HERE ********************************* */
+#package{
+    width:100%;
+    height:100vh;
+    background-color: var(--sub-background);
+    padding:5% 0;
+    font-family: var(--header-font);
+    position:relative;
+}
+.package-section-shapes .package-shape-div-burger{
+    position:absolute;
+    top:0;
+    right:18%;
+    animation-name: package-burger;
+    animation-duration:3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+.package-section-shapes .package-shape-div-cepci{
+    position:absolute;
+    top:25%;
+    left:5%;
+}
+.package-section-shapes .package-shape-div-cepci #our-chef-capci-bg{
+    transform:rotate(45deg);
+}
+.package-section-shapes .package-shape-div-mashroom{
+    position: absolute;
+    bottom:7%;
+    left:1%;
+}
+.package-section-shapes .package-shape-div-leaf{
+    position:absolute;
+    top:9%;
+    left:20%;
+}
+.package-section-shapes .package-shape-div-leaf #our-chef-leaf-bg{
+    transform:rotate(0);
+}
+.package-section-shapes .package-shape-div-frenchfry{
+    position:absolute;
+    bottom:7%;
+    right:11%;
+    animation:package-frechfry;
+    animation-duration:3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+.package-section-shapes .package-shape-div-frenchfry #our-chef-frenchfry-bg{
+    transform:rotate(-45deg);
+}
+.package-section-shapes .package-shape-div-garlic{
+    position:absolute;
+    right:8%;
+    top:30%;
+}
+#package h2{
+    text-align: center;
+    color:var(--main-color);
+}
+#package .package-card-section{
+    padding-top:80px;
+}
+#package .card-pack{
+    text-align: center;
+    padding:20px 0;
+    color:var(--main-color);
+    z-index: 2;
+}
+#package .card-pack h3{
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+#package .card-pack img{
+    width:200px;
+    margin:0 auto;
+}
+#package .card-pack .card-pack-body .card-pack-title{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+#package .card-pack .card-pack-body .card-pack-text{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+#package .card-pack .card-pack-body .my-btn{
+    background-color: var(--main-color);
+    border:var(--main-color);
+    width:100%;
+}
+/* ************************************ PACKAGE SECTION END HERE ********************************* */
+
+/* ************************************ SLIDER SECTION START HERE ********************************* */
+#slider-area{
+    background-image: url(../images/slider-area-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width:100%;
+    height:100vh;
+    position:relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#slider-area::before{
+    position: absolute;
+    width:100%;
+    height:100%;
+    background-color: var(--main-color);
+    top:0;
+    left:0;
+    content: "";
+    opacity:0.8;
+}
+.slider{
+    position:relative;
+    z-index: 2;
+}
+.slider .slider-item{
+    text-align: center;
+    color:var(--white-color);
+}
+.slider .slider-item p{
+    font-size:2.3rem;
+    width: 45%;
+    margin:0 auto;
+    margin-bottom:30px;
+}
+.slider .slider-item h4{
+    font-size:3rem;
+    font-weight:700;
+    font-family: var(--header-font);
+}
+/* ************************************ SLIDER SECTION END HERE ********************************* */
+
+/* ************************************ SUBSCRIBE SECTION START HERE ********************************* */
+#subscribe{
+    width:100%;
+    height:100vh;
+    background-color: var(--sub-background);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#subscribe h2{
+    color:var(--main-color);
+}
+#subscribe p{
+    color:var(--main-color);
+    width:67%;
+    margin:0 auto;
+    margin-bottom:30px;
+}
+.form-div{
+    padding-top:50px;
+}
+.form-div #search{
+    border:1px solid var(--white-color);
+    background-color: var(--white-color);
+    margin:0;
+    padding:0 20px;
+    width:500px;
+    height:60px;
+    font-size: 1.5rem;
+    border-radius: 50px 0 0 50px;
+}
+.form-div #search-btn{
+    margin:0;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    border-radius:0 50px 50px 0;
+    padding:0 20px;
+    height:60px;
+    background-color: var(--main-color);
+    border:1px solid var(--main-color);
+    margin-top:-6px;
+    margin-left: -6px;
+}
+/* ************************************ SUBSCRIBE SECTION END HERE ********************************* */
