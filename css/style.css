@@ -128,6 +128,17 @@ section p{
         right:11%;
     }
 }
+@keyframes subscribe-frenchfry {
+    0%{
+        left:10%;
+    }
+    50%{
+        left:15%;
+    }
+    100%{
+        left:10%;
+    }
+}
 /*********************************  ALL KEYFRAMES END HERE ***************************** */
 /* ************************************** COMMON CODES END HERE ******************************* */
 
@@ -164,10 +175,8 @@ section p{
     color:var(--white-color);
     font-family: var(--header-font);
 }
-.navbar-expand-lg .navbar-collapse {
-    display: flex !important;
-    flex-basis: auto;
-    justify-content: right;
+.navbar .navbar-nav{
+    padding-left:30rem;
 }
 .navbar-light .navbar-nav .nav-link {
     color: var(--white-color);
@@ -637,44 +646,48 @@ section p{
 .subscribe-section-shapes .subscribe-shape-div-mashroom{
     position: absolute;
     top:50%;
-    left:10%;
+    left:5%;
 }
-.chef-shape-div .chef-shape-div-leaf{
+.subscribe-section-shapes .subscribe-shape-div-leaf{
     position:absolute;
-    bottom:12%;
-    left:35%;
+    top:10%;
+    left:15%;
 }
-#our-chef-leaf-bg{
-    width:100px;
-    transform:rotate(45deg);
-    animation-name: leaf;
-    animation-duration:2s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
+.subscribe-section-shapes .subscribe-shape-div-leaf #our-chef-leaf-bg{
+    transform:rotate(-10deg);
 }
-.chef-shape-div .chef-shape-div-frenchfry{
+.subscribe-section-shapes .subscribe-shape-div-frenchfry{
     position:absolute;
-    top:40%;
-    left:0;
-    animation-name: frenchfry;
+    bottom:5%;
+    left:15%;
+    animation-name: subscribe-frenchfry;
     animation-duration:3s;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
 }
-#our-chef-frenchfry-bg{
-    width:200px;
+.subscribe-section-shapes .subscribe-shape-div-frenchfry #our-chef-frenchfry-bg{
+    transform:rotate(-45deg);
 }
-.chef-shape-div .chef-shape-div-garlic{
+.subscribe-section-shapes .subscribe-shape-div-garlic{
     position:absolute;
-    left:20%;
-    top:15%;
+    top:50%;
+    right:10%;
 }
-#our-chef-garlic-bg{
-    width:100px;
-    animation-name: garlic;
-    animation-duration:2s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
+.subscribe-section-shapes .subscribe-shape-div-cepci-two{
+    position:absolute;
+    bottom:10%;
+    right:15%;
+}
+.subscribe-section-shapes .subscribe-shape-div-cepci-two #our-chef-capci-bg{
+    transform:rotate(45deg);
+}
+.subscribe-section-shapes .subscribe-shape-div-leaf-two{
+    position:absolute;
+    bottom:5%;
+    left:50%;
+}
+.subscribe-section-shapes .subscribe-shape-div-leaf-two #our-chef-leaf-bg{
+    transform: rotate(-45deg);
 }
 #subscribe h2{
     color:var(--main-color);
@@ -711,3 +724,579 @@ section p{
     margin-left: -6px;
 }
 /* ************************************ SUBSCRIBE SECTION END HERE ********************************* */
+#footer{
+    width:100%;
+    height:100vh;
+    background-color:var(--black-color);
+    color:var(--white-color);
+    display: flex;
+    align-items: center;
+}
+#footer a{
+    color:var(--white-color);
+    text-decoration: none;
+}
+#footer h3{
+    font-size:3rem;
+    font-weight: 700;
+    font-family: var(--header-font);
+    margin-bottom:30px;
+}
+#footer p{
+    font-size: 1.5rem;
+    width:80%;
+    margin-bottom:40px;
+}
+#footer .icon-footer{
+    font-size: 2rem;
+    background:var(--white-color);
+    color:var(--black-color);
+    width:50px;
+    height:50px;
+    padding:10px;
+    border-radius:50%;
+    margin-right: 10px;
+}
+#footer .icon-p{
+    padding-left: 15px;
+}
+#footer h4{
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+#footer ul li{
+    list-style-type: none;
+    font-size: 1.5rem;
+    margin-left:-30px;
+    margin-bottom: 10px;
+}
+/* ************************************ SUBSCRIBE SECTION END HERE ********************************* */
+
+/* ****************************************************************************
+*********************************** MOBILE RESPONSIVE START ******************************** 
+****************************************************************************************/
+@media screen and (max-width: 600px) and (min-width: 360px) {
+/* ************************************** COMMON CODES START HERE ******************************** */
+section h2{
+    font-size: 2.5rem;
+    margin-bottom:10px;
+}
+section p{
+    font-size:1rem;
+}
+.my-btn{
+    font-size: 1rem;
+}
+/*********************************  ALL KEYFRAMES START HERE ***************************** */
+@keyframes burger {
+    0%{
+        top:0;
+    }
+    50%{
+        top:3%;
+    }
+    100%{
+        top:0;
+    }
+}
+@keyframes package-burger {
+    0%{
+        top:0;
+    }
+    50%{
+        top:3%;
+    }
+    100%{
+        top:0;
+    }
+}
+@keyframes capci {
+    0%{
+        width:40px;
+    }
+    50%{
+        width:50px;
+    }
+    100%{
+        width:40px;
+    }
+}
+@keyframes mashroom {
+    0%{
+        transform:rotate(90deg);
+    }
+    50%{
+        transform:rotate(360deg);
+    }
+    100%{
+        transform:rotate(90deg);
+    }
+}
+@keyframes leaf {
+    0%{
+        width:40px;
+    }
+    50%{
+        width:50px;
+    }
+    100%{
+        width:40px;
+    }
+}
+@keyframes frenchfry {
+    0%{
+        left:0;
+    }
+    50%{
+        left:5%;
+    }
+    100%{
+        left:0;
+    }
+}
+@keyframes garlic {
+    0%{
+        width:40px;
+    }
+    50%{
+        width:50px;
+    }
+    100%{
+        width:40px;
+    }
+}
+@keyframes big-frenchfry {
+    0%{
+        right:0;
+    }
+    50%{
+        right:3%;
+    }
+    100%{
+        right:0;
+    }
+}
+@keyframes package-frechfry {
+    0%{
+        right:0;
+    }
+    50%{
+        right:3%;
+    }
+    100%{
+        right:0;
+    }
+}
+@keyframes subscribe-frenchfry {
+    0%{
+        left:10%;
+    }
+    50%{
+        left:15%;
+    }
+    100%{
+        left:10%;
+    }
+}
+/*********************************  ALL KEYFRAMES END HERE ***************************** */
+/* ************************************** COMMON CODES END HERE ******************************* */
+
+/* ************************************** HEADER CODES START HERE ******************************** */
+.header{
+    height: auto;
+    text-align: center;
+}
+.navbar-brand img{
+    width:100px;
+}
+.navbar-brand p{
+    font-size: 20px;
+}
+.navbar .navbar-nav{
+    padding-left:0;
+}
+.navbar-light .navbar-toggler{
+    border:3px solid var(--white-color);
+}
+.res-nav-btn .fa-bars{
+    color:var(--white-color);
+    font-size: 25px;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: var(--white-color);
+    font-size: 2rem;
+    background-color: var(--black-color);
+    text-align: center;
+    margin-bottom:10px;
+    border-radius:50px;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color:var(--main-color);
+}
+.navbar-light .navbar-nav .nav-link.active:hover {
+    color: var(--main-color);
+}
+.header-wrap{
+    padding:15px;
+}
+.header-wrap h1{
+    font-size: 2.3rem;
+    width:100%;
+    margin-bottom: 20px;
+}
+.header-wrap p{
+    font-size: 1rem;
+    width:100%;
+    margin-bottom: 30px;
+}
+/* *************************************** HEADER CODES END HERE ******************************** */
+
+/* ************************************ OUR CHEF SECTION START HERE ******************************** */
+#our-chef{
+    height:auto;
+    padding:20px 0;
+}
+.chef-shape-div .chef-shape-div-burger{
+    top:1%;
+    right:5%;
+}
+#our-chef-burger-bg{
+    width:40px;
+}
+.chef-shape-div .chef-shape-div-cepci{
+    top:35%;
+    right:2%;
+}
+#our-chef-capci-bg{
+    width:40px;
+}
+.chef-shape-div .chef-shape-div-mashroom{
+    bottom:2%;
+    left:2%;
+}
+#our-chef-mashroom-bg{
+    width:40px;
+}
+.chef-shape-div .chef-shape-div-leaf{
+    top:70%;
+    left:80%;
+}
+#our-chef-leaf-bg{
+    width:40px;
+}
+.chef-shape-div .chef-shape-div-frenchfry{
+    top:60%;
+}
+#our-chef-frenchfry-bg{
+    width:40px;
+}
+.chef-shape-div .chef-shape-div-garlic{
+    left:5%;
+    top:12%;
+}
+#our-chef-garlic-bg{
+    width:40px;
+}
+#our-chef p{
+    width:100%;
+}
+#our-chef .all-chef{
+    padding-top:30px;
+}
+#our-chef .all-chef .single-chef{
+    margin-bottom: 20px;
+}
+#our-chef .all-chef .single-chef h3{
+    font-size:1.5rem;
+    margin-bottom:5px;
+}
+/* ************************************** OUR CHEF SECTION END HERE ******************************* */
+
+/************************************** BEST BURGER SECTION START HERE ****************************** */
+#best-burger{
+    height:auto;
+    padding:5% 0;
+    text-align: center;
+}
+#best-burger .best-burger-text-area{
+    height:auto;
+}
+#best-burger .best-burger-text-area p{
+    margin-bottom:20px;
+}
+#best-burger .best-burger-text-area a{
+    width:60%;
+    margin:0 auto;
+}
+/* ************************************** BEST BURGER SECTION END HERE ******************************** */
+
+/* ************************************ BIG BURGER SECTION START HERE ******************************** */
+#big-burger{
+    height:auto;
+    padding:5% 0;
+    text-align: center;
+}
+.big-burger-shapes .big-shape-div-burger{
+    top:2%;
+    right:2%;
+}
+.big-burger-shapes .big-shape-div-leaf{
+    top:1%;
+    right:85%;
+}
+.big-burger-shapes .big-shape-div-frenchfry{
+    bottom: 0;
+    right:0;
+}
+.big-burger-shapes .big-shape-div-mashroom{
+    bottom:50%;
+    left:85%;
+}
+.big-burger-shapes .big-shape-div-garlic{
+    bottom: 3%;
+    left:0;
+}
+.big-burger-shapes .big-shape-div-cepci{
+    top:35%;
+}
+#big-burger .big-burger-img-area{
+    padding-left:0;
+}
+#big-burger .big-burger-text-area{
+    height:auto;
+    margin-bottom: 20px;
+}
+#big-burger .big-burger-text-area p{
+    margin-bottom:20px;
+}
+#big-burger .big-burger-text-area a{
+    margin:0 auto;
+    width:60%;
+}
+/* ************************************** BIG BURGER SECTION END HERE ******************************** */
+
+/* ************************************ STATISTICS SECTION START HERE ******************************* */
+#statistics{
+    height:auto;
+    text-align: center;
+}
+#statistics p{
+    width:100%;
+}
+#statistics .counter-area{
+    padding-top:20px;
+}
+#statistics .counter-area .counter-main{
+    width:100%;
+    border:2px solid var(--white-color);
+    padding:20px 0;
+}
+#statistics .counter-area .counter-main span{
+    font-size:1.5rem;
+}
+#statistics .counter-area .counter-main p{
+    font-size:0.9rem;
+}
+/* ************************************ STATISTICS SECTION END HERE ********************************* */
+
+/* ************************************ PACKAGE SECTION START HERE ********************************* */
+#package{
+    height:auto;
+    padding:5% 0;
+}
+#package h2{
+    font-size: 1.9rem;
+}
+.package-section-shapes .package-shape-div-burger{
+    top:0;
+    right:0;
+}
+.package-section-shapes .package-shape-div-cepci{
+    top:15%;
+    left:0;
+}
+.package-section-shapes .package-shape-div-mashroom{
+    bottom:0;
+    left:0;
+}
+.package-section-shapes .package-shape-div-leaf{
+    top:30%;
+    left:85%;
+}
+.package-section-shapes .package-shape-div-frenchfry{
+    bottom:30%;
+    right:0;
+}
+.package-section-shapes .package-shape-div-garlic{
+    right:85%;
+    top:50%;
+}
+#package .package-card-section{
+    padding-top:20px;
+}
+#package .card-pack{
+    padding:10px 0;
+    width:90%;
+    margin:0 auto;
+    margin-bottom: 15px;
+}
+#package .card-pack h3{
+    font-size: 1.5rem;
+}
+#package .card-pack img{
+    width:100px;
+}
+#package .card-pack .card-pack-body .card-pack-title{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+#package .card-pack .card-pack-body .card-pack-text{
+    font-size: 1rem;
+}
+#package .card-pack .card-pack-body .my-btn{
+    margin:0 auto;
+    width:80%;
+}
+/* ************************************ PACKAGE SECTION END HERE ********************************* */
+
+/* ************************************ SLIDER SECTION START HERE ********************************* */
+#slider-area{
+    height:auto;
+    padding-top:60px;
+}
+.slider .slider-item p{
+    font-size:1rem;
+    width: 100%;
+    margin-bottom:20px;
+}
+.slider .slider-item h4{
+    font-size:1.5rem;
+}
+/* ************************************ SLIDER SECTION END HERE ********************************* */
+
+/* ************************************ SUBSCRIBE SECTION START HERE ********************************* */
+#subscribe{
+    height:auto;
+    padding:5% 0;
+}
+.subscribe-section-shapes .subscribe-shape-div-burger{
+    position:absolute;
+    top:8%;
+    right:10%;
+    animation-name: burger;
+    animation-duration:3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+.subscribe-section-shapes .subscribe-shape-div-cepci{
+    position:absolute;
+    top:5%;
+    left:50%;
+}
+.subscribe-section-shapes .subscribe-shape-div-mashroom{
+    position: absolute;
+    top:50%;
+    left:5%;
+}
+.subscribe-section-shapes .subscribe-shape-div-leaf{
+    position:absolute;
+    top:10%;
+    left:15%;
+}
+.subscribe-section-shapes .subscribe-shape-div-leaf #our-chef-leaf-bg{
+    transform:rotate(-10deg);
+}
+.subscribe-section-shapes .subscribe-shape-div-frenchfry{
+    position:absolute;
+    bottom:5%;
+    left:15%;
+    animation-name: subscribe-frenchfry;
+    animation-duration:3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+.subscribe-section-shapes .subscribe-shape-div-frenchfry #our-chef-frenchfry-bg{
+    transform:rotate(-45deg);
+}
+.subscribe-section-shapes .subscribe-shape-div-garlic{
+    position:absolute;
+    top:50%;
+    right:10%;
+}
+.subscribe-section-shapes .subscribe-shape-div-cepci-two{
+    position:absolute;
+    bottom:10%;
+    right:15%;
+}
+.subscribe-section-shapes .subscribe-shape-div-cepci-two #our-chef-capci-bg{
+    transform:rotate(45deg);
+}
+.subscribe-section-shapes .subscribe-shape-div-leaf-two{
+    position:absolute;
+    bottom:5%;
+    left:50%;
+}
+.subscribe-section-shapes .subscribe-shape-div-leaf-two #our-chef-leaf-bg{
+    transform: rotate(-45deg);
+}
+#subscribe h2{
+    font-size: 1.9rem;
+}
+#subscribe p{
+    width:100%;
+    margin-bottom:20px;
+}
+.form-div{
+    padding-top:10px;
+}
+.form-div #search{
+    width:245px;
+    height:40px;
+    font-size: 1rem;
+}
+.form-div #search-btn{
+    font-size: 0.8rem;
+    padding:0 10px;
+    height:40px;
+    margin-top:-2px;
+}
+/* ************************************ SUBSCRIBE SECTION END HERE ********************************* */
+#footer{
+    height:auto;
+    padding:5% 1%;
+}
+#footer .footer-first-div{
+    margin-bottom: 30px;
+}
+#footer h3{
+    font-size:2rem;
+    margin-bottom:20px;
+}
+#footer p{
+    font-size: 1rem;
+    width:100%;
+    margin-bottom:20px;
+}
+#footer .icon-footer{
+    font-size: 1.5rem;
+    width:40px;
+    height:40px;
+    padding:9px;
+}
+#footer .icon-p{
+    padding-left: 12px;
+}
+#footer h4{
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+#footer ul li{
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+/* ************************************ SUBSCRIBE SECTION END HERE ********************************* */
+}
+/* ****************************************************************************
+*********************************** MOBILE RESPONSIVE END ******************************** 
+****************************************************************************************/
