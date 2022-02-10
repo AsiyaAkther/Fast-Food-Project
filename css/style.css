@@ -618,6 +618,63 @@ section p{
     justify-content: center;
     align-items: center;
     text-align: center;
+    position:relative;
+}
+.subscribe-section-shapes .subscribe-shape-div-burger{
+    position:absolute;
+    top:8%;
+    right:10%;
+    animation-name: burger;
+    animation-duration:3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+.subscribe-section-shapes .subscribe-shape-div-cepci{
+    position:absolute;
+    top:5%;
+    left:50%;
+}
+.subscribe-section-shapes .subscribe-shape-div-mashroom{
+    position: absolute;
+    top:50%;
+    left:10%;
+}
+.chef-shape-div .chef-shape-div-leaf{
+    position:absolute;
+    bottom:12%;
+    left:35%;
+}
+#our-chef-leaf-bg{
+    width:100px;
+    transform:rotate(45deg);
+    animation-name: leaf;
+    animation-duration:2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+.chef-shape-div .chef-shape-div-frenchfry{
+    position:absolute;
+    top:40%;
+    left:0;
+    animation-name: frenchfry;
+    animation-duration:3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+#our-chef-frenchfry-bg{
+    width:200px;
+}
+.chef-shape-div .chef-shape-div-garlic{
+    position:absolute;
+    left:20%;
+    top:15%;
+}
+#our-chef-garlic-bg{
+    width:100px;
+    animation-name: garlic;
+    animation-duration:2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
 }
 #subscribe h2{
     color:var(--main-color);

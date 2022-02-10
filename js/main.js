@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    //wow js code
     new WOW().init();
 
     //jQuery Counter
@@ -23,6 +24,7 @@ $(document).ready(function(){
         }
     })
 
+    //owl carousal slider code
     $('.slider').owlCarousel({
         loop:true,
         margin:10,
